@@ -11,10 +11,10 @@ class PostsController < ApplicationController
   def update
     @post.update(post_params)
     if @post.valid?
-      @post.save 
+      @post.save
       redirect_to post_path(@post)
-    else 
-      render :new 
+    else
+      render :new
     end
   end
 
